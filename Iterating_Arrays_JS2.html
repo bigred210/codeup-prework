@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>Iterating Arrays JS2</title>
+    </head>
+    <body>
+        <script>			
+			var Names = ['Mathew', 'Mark', 'Luke', 'John'];
+			
+			for (var i = 0; i < Names.length; i++) {
+            console.log("Name at index"   + i +  "is"  + Names[i]); 
+       }
+			
+			 Names.forEach(function (element, index, array) {
+
+            // element is the persons name
+            // index is the iterator
+            // array is the Name array itself
+
+            console.log('The Names at index ' +index+ 'is:' +element);
+       });
+
+        </script>
+    </body>
+ </html>

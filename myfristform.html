@@ -1,0 +1,112 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My First HTML Form</title>
+	</head>
+	<body>
+		<form method="POST" action="http://requestb.in/155408d1">
+			<p>
+				<label for="username">User Name</label>
+				<input id="username" name="User Name" type="text" placeholder="Enter username here.">
+			</p>
+			<p>
+				<label for="password">Password</label>
+				<input id="password" name="Password" type="password"placeholder="Enter password here.">
+			</p>
+			<p>
+				<button type="submit">Login</button>
+			</p>
+		</form>
+			<h2>Compose an Email</h2>
+		<form method="POST" action="http://requestb.in/155408d1">
+			<input type="checkbox" id="saveAcopy" name="saveAcopy" value="yes" checked>
+			<label for="saveAcopy">Save a Copy to Sent Folder</label>
+			<p>
+				<label for="subject">Subject</label>
+				<input id="subject" name="Subject" type="text" placeholder="Enter Subject here.">
+			</p>
+			<p>
+				<label for="body">Body</label>
+				<textarea id="body" name="body" rows="5" cols="40">
+				</textarea>
+			</p>
+			<p>
+				<button type="submit">Send</button>
+			</p>
+		</form>
+			<h2>"Multiple Choice Test"</h2>
+		<form>
+			<p>What is the capital of Texas?</p>
+				<label>
+   					<input type="radio" name="q1" value="houston">
+   	 				Houston
+				</label>
+				<label>
+    				<input type="radio" name="q1" value="dallas">
+   					Dallas
+				</label>
+				<label>
+    				<input type="radio" name="q1" value="austin">
+   					Austin
+				</label>
+				<label>
+    				<input type="radio" name="q1" value="san antonio">
+    				San Antonio
+				</label>
+				<p>What Texas city is Codeup located in?</p>
+				<label>
+   					<input type="radio" name="q2" value="houston">
+   	 				Houston
+				</label>
+				<label>
+    				<input type="radio" name="q2" value="dallas">
+   					Dallas
+				</label>
+				<label>
+    				<input type="radio" name="q2" value="austin">
+   					Austin
+				</label>
+				<label>
+    				<input type="radio" name="q2" value="san antonio">
+    				San Antonio
+				</label>
+				<p>
+					<button type="GRADE TEST">GRADE TEST</button>
+				</p>	
+			</p>
+		</form>
+			<h2>YUMMY!<h2>
+		<form method="POST" action="http://requestb.in/155408d1">
+				<label for="like"> What icecream do you like?</label>
+				<select id="like" name="like[]" multiple>
+					<option value="Chocolate">Chocolate</option>
+					<option value="CookiesCreme">CookieCream</option>
+					<option value="Vanilla">Vanilla</option>
+				</select>
+				<p>
+					<button type="Continue">CONTINUE</button>
+				</p>
+		</form>
+			<h2>Answer me this</h2>
+		<form>
+				<p>What operating systems have you used?</p>
+					<label><input type="checkbox" id="os1" name="os[]" value="linux"> Linux</label>
+					<label><input type="checkbox" id="os2" name="os[]" value="osx"> OS X</label>
+					<label><input type="checkbox" id="os3" name="os[]" value="windows"> Windows</label>
+				<p>
+					<button type="click here">SUBMIT ANSWER</button>
+		</form>
+			<h2>Select Testing</h2>
+		<form method="POST" action="http://requestb.in/155408d1">
+				<label for="balance">Can you balance on 1 foot?</label>
+				<select id="balance" name="balance">
+					<option value="1">Yes</option>
+					<option selected value="0">No</option>
+				</select>
+				<p>
+					<button type"continue here">CONTINUE HERE</button>
+				</p>
+		</form>
+	</body>
+<html>

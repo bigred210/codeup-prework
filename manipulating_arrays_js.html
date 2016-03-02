@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title> Manipulating_Arrays_JS </title>
+    </head>
+    <body>
+        <script>
+
+     	// todo:
+		// Create an array holding the names of the planets of our solar system (in order, starting closest to the sun).   
+			
+        	var planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus','neptune'];
+        	console.log(planets);
+
+
+		// function for logging the planets array
+			console.log('function for logging planets array.');
+        	var planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus','neptune'];
+        	planets.forEach(function (element,index,array) {
+        		//element is the planet name
+        		// index is the iterator
+        		// array is the shapes array itself
+        		console.log('The planet at index ' + index + 'is:' + element);
+        	});
+
+
+        // todo: Do what the log statement above says you will do. (((adding the sun)))
+        	console.log('Adding sun to planet list.');
+        	var planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus','neptune'];
+        	console.log(planets);
+        	planets.unshift('sun');
+        	console.log(planets);
+
+
+        // todo: Do what the log statement above says you will do. (((adding pluto)))
+        	console.log('Adding pluto to planet list.');
+        	planets.push('pluto');
+        	console.log(planets);
+
+
+        // todo: Do what the log statement above says you will do. (((removing sun)))
+        	console.log('Removing sun from planet list.');
+        	planets.shift('sun');
+        	console.log(planets);
+
+
+        // todo: Do what the log statement above says you will do. (((removing pluto)))
+        	console.log('Removing pluto from planet list.');
+        	planets.pop('pluto');
+        	console.log(planets);
+
+
+        // todo: Do what the log statement above says you will do. (((index/log earth)))
+        	console.log('Index/Log earth.');
+        	var index = planets.indexOf('earth');
+        	console.log(index);
+
+
+        // todo: Do what the log statement above says you will do. (((splice mars out)))
+        	console.log('Splice mars out.');
+        	console.log(planets)
+        	console.log('removing the planet after earth');
+        	var removed = planets.splice(planets.indexOf('mars'),1);
+        	console.log(removed);
+        	console.log(planets);
+
+
+         // todo: Do what the log statement above says you will do. (((splice mars in)))
+        	console.log('Splice mars in.');
+        	console.log('adding the planet after earth');
+        	planets.splice(planets.indexOf('earth') + 1 , 0, 'mars');
+        	console.log(planets);
+
+
+        // todo: Do what the log statement above says you will do. (((reverse planet array)))
+        	console.log('Reverse planet array.');
+        	console.log('reversing the planets array');
+        	planets.reverse();
+        	console.log(planets);
+
+
+        // todo: Do what the log statement above says you will do. (((sort planet array)))
+        	console.log('Sort planet array.');
+			console.log('Sorting the planets array.');
+			planets.sort();
+			console.log(planets);
+
+		</script>
+    </body>
+ </html>
